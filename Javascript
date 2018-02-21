@@ -117,9 +117,10 @@ if (moonPhase === 'full') {
   console.log('I swear I am not a werewolf.');
 }
 
-let moonPhase = 'solar eclipse';
+let moonPhase = 'full';
 
-if (moonPhase === 'full') {
+
+if (moonPhase === 'full' || isFoggyNight === true) {
   console.log('Howl!');
 } else if (moonPhase === 'mostly full') {
   console.log('Arms and legs are getting hairier');
@@ -128,5 +129,6 @@ if (moonPhase === 'full') {
 } else {
   console.log('Invalid moon phase');
 }
+
                       
 
