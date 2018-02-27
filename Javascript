@@ -177,13 +177,52 @@ pressPowerButton();
 // Output: Calculator turning off.
 
 
+let orderCount = 0;
+
 const takeOrder = (topping, crustType) => {
+  orderCount++;
   console.log('Order: ' + crustType + ' pizza topped with ' + topping);
 };
 
-takeOrder('Onions', 'thin crust');
+takeOrder('mushroom', 'thin crust');
 takeOrder('spinach', 'whole wheat');
 takeOrder('pepperoni', 'brooklyn style');
+
+const getSubTotal = (itemCount) => {
+  return itemCount * 7.5;
+};
+
+console.log(getSubTotal(orderCount));
+
+const getTax = () => {
+ return getSubTotal(orderCount) * 0.06; 
+};
+
+const getTotal = () => {
+  return getSubTotal(orderCount) + getTax(); 
+}; 
+
+console.log(getSubTotal(orderCount));
+console.log(getTotal());
+
+
+const isGreaterThan = (numberOne, numberTwo) => {
+  if(numberOne > numberTwo){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isGreaterThan(4, 8)
+
+const volumeOfSphere = diameter => (1/6) * Math.PI * diameter * diameter * diameter;
+
+console.log('The volume of the sphere is ' + volumeOfSphere(10) + ' cubic centimeters')
+
+
+
+
 
 
 
