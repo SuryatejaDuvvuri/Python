@@ -221,6 +221,41 @@ const volumeOfSphere = diameter => (1/6) * Math.PI * diameter * diameter * diame
 console.log('The volume of the sphere is ' + volumeOfSphere(10) + ' cubic centimeters')
 
 
+const satellite = 'The Moon'
+const galaxy = 'The Milky Way'
+let stars = 'North Star'
+
+const myNightSky = () => {
+   stars = 'Sirius';
+  return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+};
+
+console.log(myNightSky())
+
+console.log(stars);
+
+const visibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+  console.log();
+  
+};
+
+visibleLightWaves();
+console.log();
+
+const visibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+  let region = 'The Arctic';
+    if (region === 'The Arctic') {
+      let lightWaves = 'Northern Lights';
+      console.log(lightWaves);  
+    }
+  console.log(lightWaves);
+};
+
+visibleLightWaves();
+
+
 
 
 
